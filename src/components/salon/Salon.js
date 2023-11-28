@@ -43,7 +43,7 @@ const Salon = ({ setPage }) => {
           body: JSON.stringify({
             latitude: coordinates.latitude,
             longitude: coordinates.longitude,
-            distance: 1000,
+            distance: 10,
           }),
           headers: {
             'Content-type': 'application/json',
@@ -124,7 +124,7 @@ const Salon = ({ setPage }) => {
       <Navbar setPage={setPage} />
       <div className="salon">
         <div className="shop-box">
-          <h2>Nearby Salons - 15km</h2>
+          <h2>Nearby Salons - 10km</h2>
           {shops.length !== 0 ? (
             shops.map(elem => {
               const handleShopItemClick = () => {
