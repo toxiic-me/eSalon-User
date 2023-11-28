@@ -8,7 +8,7 @@ import Salon from "./components/salon/Salon";
 import Contact from "./components/contact/Contact";
 
 const App = () => {
-  const [page, setPage] = useState("Salon");
+  const [page, setPage] = useState("Login");
 
   const openPage = (page) => {
     setPage(page);
